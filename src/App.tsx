@@ -10,6 +10,8 @@ import NavBarComponent from "./components/navBar/NavBarComponent";
 import HomePage from "./pages/HomePage";
 import FooterComponent from "./components/footer/FooterComponent";
 import TrendingNewsPage from "./pages/TrendingNewsPage";
+import RecipesPage from "./pages/RecipesPage";
+import RecipePage from "./pages/RecipePage";
 
 interface IRoute {
     path: string;
@@ -31,6 +33,18 @@ const App = () => {
             path: "/trending",
             name: "Trending News",
             component: TrendingNewsPage,
+            exact: true
+        },
+        {
+            path: "/recipes",
+            name: "Recipes",
+            component: RecipesPage,
+            exact: true
+        },
+        {
+            path: "/recipe/:id",
+            name: "Recipe",
+            component: RecipePage,
             exact: true
         }
     ];

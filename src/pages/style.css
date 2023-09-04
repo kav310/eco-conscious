@@ -18,3 +18,13 @@
 .displayNone {
     visibility: hidden;
 }
+
+.recipeListImages {
+    width: 200px;
+    height: 200px;
+}
+
+.recipeBannerImage {
+    width: 650px;
+    height: 650px;
+}
