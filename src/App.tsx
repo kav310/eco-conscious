@@ -9,6 +9,7 @@ import {
 import NavBarComponent from "./components/navBar/NavBarComponent";
 import HomePage from "./pages/HomePage";
 import FooterComponent from "./components/footer/FooterComponent";
+import TrendingNewsPage from "./pages/TrendingNewsPage";
 
 interface IRoute {
     path: string;
@@ -27,9 +28,9 @@ const App = () => {
             exact: true
         },
         {
-            path: "/about",
-            name: "About Page",
-            component: "AboutPage",
+            path: "/trending",
+            name: "Trending News",
+            component: TrendingNewsPage,
             exact: true
         }
     ];

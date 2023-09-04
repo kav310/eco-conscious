@@ -1917,9 +1917,7 @@ video {
 }
 
 .bg-red-400 {
-  --bg-opacity: 1;
-  background-color: #fc8181;
-  background-color: rgba(252, 129, 129, var(--bg-opacity));
+  background-color: #E13722;
 }
 
 .bg-red-500 {
