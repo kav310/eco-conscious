@@ -31,7 +31,7 @@ export default function Navbar() {
 
     // start mobile first plus facile
     return (
-        <nav className="fixed top-0 w-full items-center flex p-4">
+        <nav className= "top-0 w-full items-center flex p-4">
             <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
                 <img src={require('../../assets/images/brandName.svg')}/>
 

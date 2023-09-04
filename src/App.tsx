@@ -7,6 +7,7 @@ import {
     Switch
 } from "react-router-dom";
 import NavBarComponent from "./components/navBar/NavBarComponent";
+import HomePage from "./pages/HomePage";
 
 interface IRoute {
     path: string;
@@ -21,7 +22,7 @@ const App = () => {
         {
             path: "/",
             name: "Home Page",
-            component: "HomePage",
+            component: HomePage,
             exact: true
         },
         {
@@ -38,22 +39,21 @@ const App = () => {
                 <Switch>
                     {routes.map((route, index) => {
                         return (
-                            <>
-                                <NavBarComponent/>
-                                <Route
-                                    key={index}
-                                    path={route.path}
-                                    exact={route.exact}
-                                    render={(props: RouteComponentProps<any>) => (
+                            <Route
+                                key={index}
+                                path={route.path}
+                                exact={route.exact}
+                                render={(props: RouteComponentProps<any>) => (
+                                    <>
+                                        <NavBarComponent/>
                                         <route.component
                                             name={route.name}
                                             {...props}
                                             {...route.props}
                                         />
-
-                                    )}
-                                />
-                            </>
+                                    </>
+                                )}
+                            />
                         );
                     })}
                 </Switch>

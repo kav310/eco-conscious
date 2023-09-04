@@ -1,0 +1,20 @@
+.homeHeroBanner {
+    width: 450px;
+    height: 450px;
+}
+
+.homeHeadingTextColor {
+    color: #A69D9D
+}
+
+.buttonTheme {
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #E13722;
+    padding: 10px 25px;
+    margin-top: 16px;
+}
+
+.displayNone {
+    visibility: hidden;
+}
