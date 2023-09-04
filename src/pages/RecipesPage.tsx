@@ -27,9 +27,6 @@ const RecipesPage = () => {
 
     return (
         <div className={"bg-gray-200"}>
-            <div className={"flex flex-row-reverse pt-12 mr-6"}>
-                <div className="underline text-sm cursor-pointer">Recommended Recipes</div>
-            </div>
             <div className={"flex flex-row-reverse mr-6"}>
                 <button className="buttonTheme">Post Recipe</button>
             </div>
