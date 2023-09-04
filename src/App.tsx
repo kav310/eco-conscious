@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import NavBarComponent from "./components/navBar/NavBarComponent";
 import HomePage from "./pages/HomePage";
+import FooterComponent from "./components/footer/FooterComponent";
 
 interface IRoute {
     path: string;
@@ -51,6 +52,7 @@ const App = () => {
                                             {...props}
                                             {...route.props}
                                         />
+                                        <FooterComponent/>
                                     </>
                                 )}
                             />
