@@ -1184,6 +1184,24 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@ionic/core@7.3.2":
+  "integrity" "sha512-I0OHBydk7Qxj+qC89hdwzjVOC3rAgQWMkqTWOVFVR5opr/eYJMCnVLIyoe05oIemLFk+LUzfPh0bvtw2aZcY/Q=="
+  "resolved" "https://registry.npmjs.org/@ionic/core/-/core-7.3.2.tgz"
+  "version" "7.3.2"
+  dependencies:
+    "@stencil/core" "^4.1.0"
+    "ionicons" "7.1.0"
+    "tslib" "^2.1.0"
+
+"@ionic/react@^7.3.2":
+  "integrity" "sha512-fJAZ0Ar3OG7BczaFwwx5BvxI0YZFPJBGdaBm0JmEZ7LoPlsnMfLOd02LbUz1l5BcV2E3ykI9bY0jevLVtFRjnQ=="
+  "resolved" "https://registry.npmjs.org/@ionic/react/-/react-7.3.2.tgz"
+  "version" "7.3.2"
+  dependencies:
+    "@ionic/core" "7.3.2"
+    "ionicons" "^7.0.0"
+    "tslib" "*"
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   "integrity" "sha512-Zuj6b8TnKXi3q4ymac8EQfc3ea/uhLeCGThFqXeC8H9/raaH8ARPUTdId+XyGd03Z4In0/VjD2OYFcBF09fNLQ=="
   "resolved" "https://registry.npmjs.org/@jest/console/-/console-24.9.0.tgz"
@@ -1389,6 +1407,16 @@
   "integrity" "sha512-DetpxZw1fzPD5xUBrIAoplLChO2VB8DlL5Gg+I1IR9b2wPqYIca2WSUxL5g1vLeR4MsQq1NeWriXAVffV+U1Fw=="
   "resolved" "https://registry.npmjs.org/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz"
   "version" "0.3.3"
+
+"@stencil/core@^2.18.0":
+  "integrity" "sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng=="
+  "resolved" "https://registry.npmjs.org/@stencil/core/-/core-2.22.3.tgz"
+  "version" "2.22.3"
+
+"@stencil/core@^4.1.0":
+  "integrity" "sha512-yIpL+CX02fy5zvFXwXcHZjjEILRm3aiONbucpfLIWPS7zcBAuucdROssartEa+D7E1JRko97ydxn1Ntdu4GoWg=="
+  "resolved" "https://registry.npmjs.org/@stencil/core/-/core-4.1.0.tgz"
+  "version" "4.1.0"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   "integrity" "sha512-j7KnilGyZzYr/jhcrSYS3FGWMZVaqyCG0vzMCwzvei0coIkczuYMcniK07nI0aHJINciujjH11T72ICW5eL5Ig=="
@@ -6045,6 +6073,20 @@
   "version" "2.2.4"
   dependencies:
     "loose-envify" "^1.0.0"
+
+"ionicons@^7.0.0":
+  "integrity" "sha512-zZ4njAqSP39H8RRvZhJvkHsv7cBjYE/VfInH218Osf2UVxJITSOutTTd25MW+tAXKN5fheYzclUXUsF55JHUDg=="
+  "resolved" "https://registry.npmjs.org/ionicons/-/ionicons-7.1.2.tgz"
+  "version" "7.1.2"
+  dependencies:
+    "@stencil/core" "^2.18.0"
+
+"ionicons@7.1.0":
+  "integrity" "sha512-iE4GuEdEHARJpp0sWL7WJZCzNCf5VxpNRhAjW0fLnZPnNL5qZOJUcfup2Z2Ty7Jk8Q5hacrHfGEB1lCwOdXqGg=="
+  "resolved" "https://registry.npmjs.org/ionicons/-/ionicons-7.1.0.tgz"
+  "version" "7.1.0"
+  dependencies:
+    "@stencil/core" "^2.18.0"
 
 "ip-regex@^2.1.0":
   "integrity" "sha1-+ni/XS5pE8kRzp+BnuUUa7bYROk= sha512-58yWmlHpp7VYfcdTwMTvwMmqx/Elfxjd9RXTDyMsbL7lLWmhMylLEqiYVLKuLzOZqVgiWXD9MfR62Vv89VRxkw=="
@@ -11350,10 +11392,15 @@
     "minimist" "^1.2.0"
     "strip-bom" "^3.0.0"
 
-"tslib@^1.10.0", "tslib@^1.8.1", "tslib@^1.9.0":
+"tslib@*", "tslib@^1.10.0", "tslib@^1.8.1", "tslib@^1.9.0":
   "integrity" "sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.13.0.tgz"
   "version" "1.13.0"
+
+"tslib@^2.1.0":
+  "integrity" "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
+  "version" "2.6.2"
 
 "tsutils@^3.17.1":
   "integrity" "sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g=="
