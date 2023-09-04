@@ -108,7 +108,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: Arial, Arial; /* 1 */
+  font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -623,7 +623,6 @@ video {
 /* Your own custom component styles */
 
 /* purgecss end ignore */
-
 
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
@@ -1853,7 +1852,9 @@ video {
 }
 
 .bg-gray-200 {
-  background-color: #f6f6f6;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
 }
 
 .bg-gray-300 {
@@ -1917,7 +1918,9 @@ video {
 }
 
 .bg-red-400 {
-  background-color: #E13722;
+  --bg-opacity: 1;
+  background-color: #fc8181;
+  background-color: rgba(252, 129, 129, var(--bg-opacity));
 }
 
 .bg-red-500 {
@@ -2077,7 +2080,9 @@ video {
 }
 
 .bg-green-400 {
-  background-color: #24823D;
+  --bg-opacity: 1;
+  background-color: #68d391;
+  background-color: rgba(104, 211, 145, var(--bg-opacity));
 }
 
 .bg-green-500 {
@@ -17695,7 +17700,9 @@ video {
 }
 
 .text-green-300 {
-  color: #5CA16B;
+  --text-opacity: 1;
+  color: #9ae6b4;
+  color: rgba(154, 230, 180, var(--text-opacity));
 }
 
 .text-green-400 {
@@ -22389,7 +22396,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Arial",
     monospace;
 }
 
@@ -109300,3 +109307,5 @@ a {
             animation: bounce 1s infinite;
   }
 }
+
+
