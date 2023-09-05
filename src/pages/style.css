@@ -28,3 +28,7 @@
     width: 650px;
     height: 650px;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
