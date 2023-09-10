@@ -15,6 +15,8 @@ import RecipePage from "./pages/RecipePage";
 import RecommendedPage from "./pages/RecommendedPage";
 import RecipesListByRecommendation from "./pages/RecipesListByRecommendation";
 import RecommendedRicpePage from "./pages/RecommendedRicpePage";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
 
 interface IRoute {
   path: string;
@@ -66,6 +68,18 @@ const App = () => {
       path: "/recommendedRecipe/:id",
       name: "Recipe",
       component: RecommendedRicpePage,
+      exact: true,
+    },
+    {
+      path: "/login",
+      name: "Login",
+      component: LoginPage,
+      exact: true,
+    },
+    {
+      path: "/signUp",
+      name: "Sign up",
+      component: SignUpPage,
       exact: true,
     },
   ];
