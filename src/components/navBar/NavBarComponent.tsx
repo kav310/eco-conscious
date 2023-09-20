@@ -1,36 +1,54 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import React from "react";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
+    const [navLinks, setNavLinks] = useState<any>(undefined);
 
     const showNav = () => {
         setToggle(!toggle);
     };
 
-    const navbarData = [
-        {
-            title: "Home",
-            href: "/",
-        },
-        {
-            title: "Recommended Recipes",
-            href: "/recommended",
-        },
-        {
-            title: "Recipe Community",
-            href: "/recipes",
-        },
-        {
-            title: "Trending News",
-            href: "/trending",
-        },
-        {
-            title: "Login",
-            href: "/login",
-        },
-    ];
+
+    useEffect(() => {
+        const storedToken = localStorage.getItem('token');
+        const navbarData = [
+            {
+                title: "Home",
+                href: "/",
+            },
+            {
+                title: "Recommended Recipes",
+                href: "/recommended",
+            },
+            {
+                title: "Recipe Community",
+                href: "/recipes",
+            },
+            {
+                title: "Trending News",
+                href: "/trending",
+            },
+        ];
+
+        if (storedToken) {
+            const link = {
+                title: "Profile",
+                href: "/profile",
+            }
+            navbarData.push(link)
+            setNavLinks(navbarData)
+        } else {
+            const link = {
+                title: "Login",
+                href: "/login",
+            }
+            navbarData.push(link)
+            setNavLinks(navbarData)
+        }
+    }, [], )
+
 
 
     // start mobile first plus facile
@@ -51,7 +69,7 @@ export default function Navbar() {
                         toggle ? " flex" : " hidden"
                     } flex-col justify-center items-center w-full first:mt-2 md:flex-row md:w-auto md:space-x-10 md:flex`}
                 >
-                    {navbarData.map((link, index) => {
+                    {navLinks && navLinks.map((link: any, index: any) => {
                         return (
                             <li key={index}>
                                 <Link

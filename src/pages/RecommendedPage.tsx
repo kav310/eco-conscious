@@ -109,7 +109,7 @@ const RecommendedPage = () => {
 
 
     return (
-        <div className="mt-5">
+        <div className="bg-gray-200 mt-5">
             <div className="text-xl text-center">Recommendations</div>
             <div className={"flex flex-row-reverse mr-6"}>
                 <button className="buttonTheme" onClick={handleRecipes}>Generate</button>

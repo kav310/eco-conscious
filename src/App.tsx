@@ -17,6 +17,9 @@ import RecipesListByRecommendation from "./pages/RecipesListByRecommendation";
 import RecommendedRicpePage from "./pages/RecommendedRicpePage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import AddRecipePage from "./pages/AddRecipePage";
+import UserProfile from "./pages/UserProfile";
+import EditRecipePage from "./pages/EditRecipePage";
 
 interface IRoute {
   path: string;
@@ -65,6 +68,18 @@ const App = () => {
       exact: true,
     },
     {
+      path: "/addRecipes",
+      name: "Add Recipe",
+      component: AddRecipePage,
+      exact: true,
+    },
+    {
+      path: "/editRecipes/:id",
+      name: "Add Recipe",
+      component: EditRecipePage,
+      exact: true,
+    },
+    {
       path: "/recommendedRecipe/:id",
       name: "Recipe",
       component: RecommendedRicpePage,
@@ -74,6 +89,12 @@ const App = () => {
       path: "/login",
       name: "Login",
       component: LoginPage,
+      exact: true,
+    },
+    {
+      path: "/profile",
+      name: "Profile",
+      component: UserProfile,
       exact: true,
     },
     {

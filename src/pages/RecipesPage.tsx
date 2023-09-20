@@ -17,6 +17,14 @@ const RecipesPage = () => {
     const [categories, setCategories] = useState<any>(undefined);
     const history = useHistory()
     const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
+    const [token, setToken] = useState<string>("");
+
+    useEffect(() => {
+        const storedToken = localStorage.getItem('token');
+        if (storedToken) {
+            setToken(storedToken);
+        }
+    }, []);
 
     useEffect(() => {
         if (selectedCategory && selectedCategory !== "Categories") {
@@ -41,6 +49,14 @@ const RecipesPage = () => {
         setSelectedCategory(e.target.value)
     }
 
+    const handleAddRecipe = () => {
+        if(token) {
+            history.push("/addRecipes")
+        }else {
+            history.push("/login")
+        }
+    }
+
 
     return (
         <div className={"bg-gray-200"}>
@@ -56,7 +72,7 @@ const RecipesPage = () => {
                 </select>
             </div>
             <div className={"flex flex-row-reverse mr-6"}>
-                <button className="buttonTheme">Post Recipe</button>
+                <button className="buttonTheme" onClick={handleAddRecipe}>Post Recipe</button>
             </div>
             <div className="ml-8">
                 <div className="mt-4 text-xl">List of Recipes</div>
